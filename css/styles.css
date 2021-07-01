@@ -425,13 +425,14 @@ footer {
     .footer-title {
         font-weight: bold;
         font-size: .8em;
-        display: inline;
+        display: inline-block;
+        margin-top: -.5%;
     }
 
     footer li {
         font-weight: bold;
         font-size: .65em;
-        display: inline;
+        display: inline-block;
     }
 
 
