@@ -333,15 +333,19 @@ footer {
     }
 
     .name {
+        font-size: 1.3em;
         padding-top: 1.3em;
         padding-right: 30%;
         float: left;
+        margin-bottom: 2em;
     }
 
     .main-nav {
         text-align: right;
         padding-top: .85em;
+        margin-top: 1.2em;
         float: right;
+        width:40%;
     }
 
     .main-nav ul {
