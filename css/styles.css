@@ -1,0 +1,462 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    background-color: rgb(219, 241, 248);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+}
+ 
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*BEGINNING NAVIGATION BAR*/
+
+.name {
+    font-size: .8em;
+    padding-top: .5em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-size: .6em;
+    font-weight: bolder;
+    background-color: lightblue; 
+    margin-top: .3em;
+    margin-bottom: .3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a {
+    display: block;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color:cornflowerblue;
+}
+
+a:active {
+    color: red;
+}
+
+/*PROFILE*/
+
+.banner {
+    width: 90%;
+    margin: 2.5em auto;
+    font-size: .6em;
+}
+
+.banner p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6em;
+    color: black;
+}
+
+.banner  img {
+    width: 75%;
+}
+
+/*PROJECTS*/
+
+.portfolio-proj {
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 3.5em;
+    margin-bottom: 1.5em;
+    padding: .5em .5em;
+    text-transform: uppercase;
+    
+}
+
+.main-content {
+    font-size: .7em;
+    letter-spacing: .5px;
+    margin-bottom: 1.5em;
+}
+
+div h3 {
+    margin-top: 1.6em;
+    font-size: 1.3em;
+}
+
+div p {
+    margin-left: .8em;
+    margin-right: .8em;
+}
+
+/*SKILLS/CONTACT/FOOTER*/
+
+.goals-title {
+    font-size: .8em;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+.goals-list li {
+    text-transform: inherit;
+    font-size: .7em;
+    margin-top: .5em;
+}
+
+.goals-list li::before {
+    content: "•"; 
+    color: navy;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.contact {
+    margin-left: .9em;
+    margin-right: .9em;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+}
+
+.contact h2 {
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.contact-info li {
+    font-size: .7em;
+    text-transform: inherit;
+    padding-top: .6em;
+}
+
+.contact p {
+    font-size: .7em;
+}
+
+.contact-info a {
+    font-weight: bolder;
+    color: navy;
+    letter-spacing: .5px;
+    padding-left: 3px;
+}
+
+hr {
+    width: 90%;
+}
+
+footer {
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 12%;
+    margin: 0 auto;
+    font-weight: bolder;
+}
+
+.footer-nav {
+    display: none;
+}
+
+.footer-title {
+    font-size: .6em;
+    float: left;
+}
+
+.top {
+    font-size: .6em;
+    float: right;
+}
+
+/*MEDIA FIX*/
+
+@media (min-width: 768px) {
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: .9em;
+        padding-top: 1em;
+    }
+
+    .main-nav li {
+        font-size: .6em;
+        font-weight: bold;
+        background-color: inherit;
+        display: inline-block;
+        margin: 1em .3em 1em .3em;
+
+    }
+
+    .banner  {
+        width: 90%;
+        display: inline-block;
+    }
+
+    .banner  p {
+        font-size: 1.8em;
+        font-family: 'Lato', sans-serif;
+        width: 60%;
+        text-align: left;
+        padding-right: .9em;
+        margin-top: 0;
+        float: left;
+    }
+
+    .banner img {
+        width: 40%;
+        padding-top: 0;
+        float: right;
+    }
+
+    .proj-pos {
+        width: 100%;
+    }
+
+    .marketing,
+    .search,
+    .travel,
+    .map,
+    .photo,
+    .calculator {
+        font-size: 1em;
+        width: 50%;
+        padding: .9em;
+        float: left;
+    }
+
+    div p {
+        letter-spacing: .3px;
+        padding-right: .5em;
+        padding-left: .5em;
+    }
+
+    .contact {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contact h2 {
+        margin-bottom: 2.5em;
+    }
+
+    .contact a {
+        font-weight: bolder;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    .top {
+        display: none;
+    }
+
+    footer {
+        padding-bottom: 95px;
+        font-weight: bolder;
+    }
+
+    .footer-title {
+        margin-top: .2em;
+        padding-top: .5em;
+    }
+
+    .footer-nav {
+        display: block;
+        margin-top: .05em;
+        padding-right: 0;
+        float: right;
+    }
+
+    footer li {
+        font-size: .6em;
+        margin-left: 1.2em;
+        display: inline;
+    }
+
+
+}
+
+
+/*MEDIA PT2*/
+
+@media (min-width: 1024px) {
+
+    .main-header {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 1.5em;
+    }
+
+    .container,
+    footer,
+    hr {
+        width: 90%;
+        max-width: 1150px;
+    }
+
+    .name {
+        padding-top: 1.3em;
+        padding-right: 30%;
+        float: left;
+    }
+
+    .main-nav {
+        text-align: right;
+        padding-top: .85em;
+        float: right;
+    }
+
+    .main-nav ul {
+        display: inline;
+    }
+
+    .main-nav li {
+        font-size: .7em;
+        font-weight: bolder;
+        margin-right: .9em;
+    }
+
+    .portfolio-proj{
+        padding-top: 1em;
+        padding-bottom: .5em;
+        margin-top: 4.78em;
+    }
+
+    .banner  {
+        margin-top: 1em;
+        margin-bottom: -.5em;
+        width: 90%;
+        max-width: 1150px;
+    }
+
+    .banner  p {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .proj-pos {
+        width: 33.333%;
+        display: inline-block;
+    }
+
+    .marketing,
+    .search,
+    .travel,
+    .map,
+    .photo,
+    .calculator {
+        font-size: 1em;
+        width: 33.333%;
+        padding: .8em;
+        float: left;
+    }
+
+    .main-content p {
+        font-size: 1.1em;
+        line-height: 1.1em;
+        letter-spacing: .2px;
+        padding-right: .1em;
+        padding-left: .1em;
+    }
+
+    .goals-title,
+    .contact h2 {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: .8em;
+    }
+
+    .goals-list {
+        font-size: 1em;
+    }
+
+    .contact p {
+        padding-right: 2.5em;
+        padding-left: 2.5em;
+    }
+
+    footer {
+        padding-top: 45px;
+        padding-bottom: 90px;
+    }
+
+    .footer-nav {
+        display: block;
+        float: right;
+    }
+
+    .footer-title {
+        font-weight: bold;
+        font-size: .8em;
+        display: inline;
+    }
+
+    footer li {
+        font-weight: bold;
+        font-size: .65em;
+        display: inline;
+    }
+
+
+}
+
+
+
+/*FIN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
